@@ -23,6 +23,10 @@
   box-sizing: border-box;
 }
 
+html {
+  min-width: 350px;
+}
+
 body {
   background: #f6f6f6;
   margin: 0;
@@ -112,4 +116,57 @@ section {
 .container {
   margin: 0 auto;
   width: 1000px;
+}
+
+@media all and (max-width: 1000px) {
+  p {
+    display: block;
+    
+    }
+    nav {
+      padding: 15px;
+    }
+    footer {
+      padding: 30px;
+    }
+    #presentation {
+      width: 100%;
+    }
+    #lipsum {
+      width: 100%;
+    }
+    .container {
+    width: 800px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  #colonne_droite {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    display: block;
+  }
+
+  #photo_recette {
+    display: block;
+    width: 100%;
+  }
+  #presentation {
+    padding: 10px;
+  }
+  #lipsum {
+    margin-left: 0;
+  }
+ 
+  .container {
+    width: 500px;
+  }
+
+}
+
+@media all and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
 }
